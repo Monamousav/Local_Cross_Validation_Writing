@@ -454,7 +454,6 @@ Based on the distribution of the RMSE for estimated site-specific EONRs (Figure 
 
 ```{r fig.id = "fig-5", fig.cap = "Distribution of Profit Deficit", fig.width = 4, fig.width = 6, dpi = 400, cache=FALSE}
 
-setwd("/Users/mmousavi2/Dropbox/Local-Cross-Validation/Writing")
  # Filter the data for the five methods
 filtered_data_profit_loss <- sum_results_whole[sum_results_whole$method %in% c("S-learner (SE)", "R-learner (CF)", "S-learner (BRF)", "S-learner (Linear)", "S-learner (RF)"), ]
 
@@ -511,7 +510,6 @@ plot
 
 
 ```{r, tab.id = "table_1", tab.cap = "True Average RMSE and Profit Loss"}
-setwd("/Users/mmousavi2/Dropbox/Local-Cross-Validation/Writing")
 knitr::include_graphics("mean_of_true_rmse_and_profit.jpg")
 ```
 
@@ -612,6 +610,7 @@ The CF model ranked next, as it had the lowest RMSE value for the true EONR in a
 
 
 ```{r, tab.id = "table_2", tab.cap = "RMSE of Local EONR and Corresponding Profit Loss"}
+
 knitr::include_graphics("t2.jpg")
 ```
 
@@ -659,6 +658,7 @@ These findings indicate that, when considering model selection based on yield pr
 
 
 ```{r, tab.id = "table_3", tab.cap = "RMSE of Yield for Different Fold and Repeats Combinations"}
+
 knitr::include_graphics("t3.jpg")
 ```
 
